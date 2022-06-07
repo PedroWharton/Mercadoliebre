@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+main{
+    padding: 8px;
+    width: 90%;
+    margin: auto;
+}
+main article {
+    background-color: white;
+}
+main article i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -25px;
+}
+main .div-descripcion{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+
+}
+.top-header{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.descuento{
+    color: #39b54a;
+}
+main article .descripcion{
+    font-weight: normal;
+    display: none;
+    width: 90%;
+}
+main article:hover  .descripcion{
+    display: block;
+}
+.muestra{
+    padding: 8.4px;
+}
+main article:hover .muestra{
+    display: none;
+}
+main article:hover i{
+    transform: rotatez(-90deg);
+    transition-duration: 1s;
+}
+.titulo-navbar{
+    text-align: center;
+    margin: auto;
+}
+.titulares{
+    font-size: 24px;
+}
+nav{
+    display: none;
+}
+.form{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0px 8px;
+}
+.form form{
+    display: flex;
+    width: 100%;
+}
+.form .input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 25px;
+    width: 90%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+}
+.form .submit {
+    top: 8px;
+    bottom: 8px;
+    width: 14px;
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 16px;
+}
+nav ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+    margin: 8px;
+    margin-left: 2px;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+div.top-header {
+    padding: 1%;
+}
+header{
+    background-color: #EAC926;
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 45%;
+}
+article{
+    margin: 10px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuentos .descripcion{
+    font-size: 16px;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    margin-bottom: 16px;
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    color: #666;
+    padding: 10px;
+    position: absolute;
+}
+section i{
+    text-align: center;
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+section h4{
+    margin: 2px;
+    padding: 2px;
+}
+.copyright{
+    text-align: left;
+    font-size: 10px;
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+.div-descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.div-descripcion .precio{
+    padding-right: 4px;
+}
+.div-registerform{
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.div-registerform label, .div-registerform input, .div-registerform button, .div-registerform p{
+    margin: 8px 0px;
+    padding: 8px 0px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.div-radio, .checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.div-radio input, .div-radio label, .checkbox input, .checkbox label{
+    width: auto;
+    align-self: center;
+    margin: 8px;
+}
+.div-radio-grande{
+    display: flex;
+    flex-wrap: wrap;
+}
+.submit-button{
+    background-color: #1259c3;
+    color: #f5f5f5;
+    border-radius: 5px;
+}
+#login-submit-button:hover{
+    background-color: #0022AA;
+}
+
+@media(min-width: 460px) {
+    main article{
+        width: 40%;
+    }
+    nav, .top-header, nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header{
+        justify-content: space-around;
+    }
+    nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .burger-menu{
+        display: none;
+    }
+    nav ul li{
+        margin: 5px;
+        padding: 2px;
+        font-size: 16px;
+    }
+    .top-header h2{
+        align-items: center;
+        margin: auto;
+    }
+    main section{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+@media(min-width :769px){
+    nav, .top-header, nav ul{
+        display: flex;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .burger-menu{
+        display: none;
+    }
+    nav ul li{
+        margin: 5px;
+        padding: 2px;
+        font-size: 16px;
+    }
+    .top-header h2{
+        align-items: center;
+        margin: auto;
+    }
+    main article{
+        width: 20%;
+    }
+    main article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition-duration: 1s;
+    }
+    .logo, .form, .titulo-navbar{
+        width: 30%;
+    }
+    footer section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer section div{
+        width: 30%;
+        margin: 16px 0px;
+    }
+    footer section div i:hover{
+        color: #39b54a;
+    }
+}
